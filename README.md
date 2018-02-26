@@ -44,8 +44,10 @@ root
  |   |   `--router.js
  |   |
  |   |--sass
- |   `--templates
- |       `--partials
+ |   |   |
+ |   |   `--style.scss
+ |   |
+ |   `--partials
  |
  |--dist
  |   `--bundle.js
