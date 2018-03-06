@@ -9,7 +9,7 @@ module.exports = function(grunt) {
         jshint: {
             files: ["assets/js/**/*.js"],
             options: {
-                predef: ["document", "console", "alert", "angular"],
+                predef: ["document", "console", "alert", "angular", "firebase"],
                 esnext: true,
                 globalstrict: true,
                 globals: {},

@@ -1,5 +1,5 @@
 "use strict";
 
-angular.module("appName").controller("controller", function($scope) {
+angular.module("inkmap").controller("controller", function($scope) {
     $scope.message = "It works";
 });
