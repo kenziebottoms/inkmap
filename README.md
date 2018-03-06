@@ -14,8 +14,8 @@ An empty Grunt-running setup including:
 
 In the root:
 
-```shell
-> npm init -y
+```bash
+npm init -y
 ```
 
 `-y` says yes to every question `npm init` would otherwise ask you.
@@ -25,7 +25,13 @@ In the root:
 These are listed as dependencies in `package.json` already.
 
 ```shell
-> npm install
+npm install
+```
+
+### Run the server
+
+```shell
+hs -o
 ```
 
 ### File structure
