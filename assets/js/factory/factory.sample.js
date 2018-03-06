@@ -1,9 +1,6 @@
 "use strict";
 
-const angular = require("angular");
-const myApp = angular.module("appName");
-
-myApp.factory("Factory", function($q, $http) {
+angular.module("appName").factory("Factory", function($q, $http) {
     let getData = () => {
         return $q((resolve, reject) => {
             $http.get("/assets/js/data/assets.json")
