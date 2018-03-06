@@ -2,12 +2,10 @@
 
 angular.module("inkmap", ['ui.router']);
 
-require("./router.js");
+require("./router");
+require("./keys");
 
-require("./keys.js");
-
-// require("./ctrl/controllers");
-
+require("./ctrl/home");
 require("./factory/auth");
 
 require("./init");

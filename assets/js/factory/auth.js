@@ -4,8 +4,8 @@ angular.module("inkmap").factory("AuthFactory", function ($q, $http) {
 
     // async retrieval of active user
     const getActiveUser = () => {
-        return new Promise((resolve, reject) => {
-            firebase.auth().onAuthStateChanged(function (user) {
+        return $q((resolve, reject) => {
+            firebase.auth().onAuthStateChanged(user => {
                 if (user) {
                     resolve(user);
                 } else {

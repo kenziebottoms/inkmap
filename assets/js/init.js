@@ -1,9 +1,6 @@
 "use strict";
 
-angular.module("inkmap").run((FIREBASE, AuthFactory) => {
+angular.module("inkmap").run((FIREBASE) => {
     let {apiKey, authDomain} = FIREBASE;
     firebase.initializeApp({apiKey, authDomain});
-    AuthFactory.logIn()
-        .then(response => console.log(response))
-        .catch(err => console.log(err));
 });
