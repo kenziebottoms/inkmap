@@ -7,5 +7,6 @@ require("./keys");
 
 require("./ctrl/home");
 require("./factory/auth");
+require("./factory/artist");
 
 require("./init");
