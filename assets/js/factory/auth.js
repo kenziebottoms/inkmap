@@ -15,11 +15,27 @@ angular.module("inkmap").factory("AuthFactory", function ($q, $http) {
         });
     };
 
+    const authenticate = () => {
+        return $q((resolve, reject) => {
+            getActiveUser()
+                .then(user => {
+                    resolve(user);
+                })
+                .catch(err => {
+                    logIn()
+                        .then(user => {
+                            resolve(user);
+                        })
+                        .catch(err => reject(err));
+                });
+        });
+    };
+
     // async popup google login
     const logIn = () => {
         var provider = new firebase.auth.GoogleAuthProvider();
         return firebase.auth().signInWithPopup(provider);
     };
 
-    return { getActiveUser, logIn };
+    return { getActiveUser, logIn, authenticate };
 });

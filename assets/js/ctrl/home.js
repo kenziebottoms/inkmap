@@ -1,11 +1,5 @@
 "use strict";
 
-angular.module("inkmap").controller("HomeCtrl", function($scope, AuthFactory) {
-    AuthFactory.getActiveUser()
-        .then(user => {
-            $scope.user = user;
-        })
-        .catch(err => {
-            AuthFactory.logIn();
-        });
+angular.module("inkmap").controller("HomeCtrl", function($scope, user) {
+    $scope.user = user;
 });

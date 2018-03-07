@@ -6,6 +6,9 @@ angular.module("inkmap").config(($stateProvider, $urlRouterProvider) => {
         .state("home", {
             url: "/",
             templateUrl: "assets/partials/home.html",
-            controller: "HomeCtrl"
+            controller: "HomeCtrl",
+            resolve: {
+                user: (AuthFactory) => AuthFactory.authenticate()
+            }
         });
 });
