@@ -5,10 +5,19 @@ angular.module("inkmap").config(($stateProvider, $urlRouterProvider) => {
     $stateProvider
         .state("home", {
             url: "/",
-            templateUrl: "assets/partials/home.html",
-            controller: "HomeCtrl",
             resolve: {
-                user: (AuthFactory) => AuthFactory.authenticate()
+                user: (AuthFactory) => AuthFactory.authenticate(),
+                artists: (ArtistFactory) => ArtistFactory.getArtists()
+            },
+            views: {
+                "" : {
+                    controller: "HomeCtrl",
+                    templateUrl: "assets/partials/home.html"
+                },
+                "map@home" : {
+                    controller: "MapCtrl",
+                    templateUrl: "assets/partials/map.html"
+                }
             }
         });
 });
