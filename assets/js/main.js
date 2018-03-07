@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("inkmap", ['ui.router']);
+angular.module("inkmap", ['ui.router', 'ngMap']);
 
 require("./router");
 require("./keys");

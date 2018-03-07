@@ -7,5 +7,5 @@ angular.module("inkmap")
         authDomain: "inkmap-a0ed0.firebaseapp.com",
     })
     .constant("MAPS", {
-        apiKey: "AIzaSyBi386GLoJ3acEQdGWBb3J0ONkEB7VKe6c"
+        apiKey: "AIzaSyDrHGfvisSKQ6WtBNnjCmV14eUzFEjpGdw"
     });

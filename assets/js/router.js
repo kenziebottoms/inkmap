@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("inkmap").config(($stateProvider, $urlRouterProvider) => {
+angular.module("inkmap").config(($stateProvider, $urlRouterProvider, MAPS) => {
     $urlRouterProvider.otherwise("/");
     $stateProvider
         .state("home", {
