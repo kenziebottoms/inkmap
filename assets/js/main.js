@@ -12,5 +12,6 @@ require("./ctrl/search");
 
 require("./factory/auth");
 require("./factory/artist");
+require("./factory/geocode");
 
 require("./init");

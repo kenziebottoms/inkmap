@@ -3,7 +3,8 @@
     <div id="results" ng-show="term">
         <div ng-repeat="result in results | filter:term" class="result">
             <h3>{{result.name}}</h3>
-            <h4>{{result.email}}</h4>
+            <h4 ng-show="result.locale">{{result.locale}}</h4>
+            <h5>{{result.email.toLowerCase()}}</h5>
             <div class="tags">
                 <span ng-repeat="tag in result.tags" class="tag">{{tag}}</span>
             </div>
