@@ -1,7 +1,4 @@
-{{artists}}
-
 <div map-lazy-load="{{mapScript}}" map-lazy-load-params="{{mapScript}}">
-    <ng-map zoom-to-include-markers="true" center="[0,0]">
-        <marker ng-repeat="artist in artists" position="[{{artist.loc.lat}}, {{artist.loc.lng}}]" title="{{artist.name}}"></marker>
+    <ng-map zoom="1.5" center="[20,0]">
     </ng-map>
 </div>
