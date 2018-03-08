@@ -13,8 +13,10 @@ angular.module("inkmap").controller("MapCtrl", function ($scope, artists, NgMap,
         return a;
     });
 
+    // marker cluster image paths
     MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_PATH_ = 'assets/img/m';
 
+    // gets markers and clusters them
     let dynMarkers = [];
     NgMap.getMap().then(function (map) {
         map.markers = [];
