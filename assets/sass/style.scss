@@ -1,4 +1,26 @@
 ng-map {
     display: block;
-    height: 500px;
+    height: 98vh;
+}
+html, body {
+    margin: 0;
+}
+#home {
+    height: 98vh;
+    display: grid;
+    grid-template: 1fr / 50% 50%;
+}
+#search {
+    #results {
+        .result {
+            .tags {
+                .tag {
+                    background: #e9e9e9;
+                    margin: .25rem;
+                    padding: .5rem;
+                    display: inline-block;
+                }
+            }
+        }
+    }
 }

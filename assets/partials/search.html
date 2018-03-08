@@ -2,7 +2,11 @@
     <input type="text" ng-model="term">
     <div id="results" ng-show="term">
         <div ng-repeat="result in results | filter:term" class="result">
-            {{result}}
+            <h3>{{result.name}}</h3>
+            <h4>{{result.email}}</h4>
+            <div class="tags">
+                <span ng-repeat="tag in result.tags" class="tag">{{tag}}</span>
+            </div>
         </div>
     </div>
 </div>

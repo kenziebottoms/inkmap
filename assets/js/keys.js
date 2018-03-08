@@ -7,5 +7,6 @@ angular.module("inkmap")
         authDomain: "inkmap-a0ed0.firebaseapp.com",
     })
     .constant("MAPS", {
-        apiKey: "AIzaSyDrHGfvisSKQ6WtBNnjCmV14eUzFEjpGdw"
+        apiKey: "AIzaSyDrHGfvisSKQ6WtBNnjCmV14eUzFEjpGdw",
+        geoKey: "AIzaSyBAhm7HGM77ClBfP8qpYIwt06Oi6kVTAXU"
     });
