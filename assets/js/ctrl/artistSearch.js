@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("inkmap").controller("SearchCtrl", function($scope, ArtistFactory, GeocodeFactory) {
+angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, ArtistFactory, GeocodeFactory) {
     ArtistFactory.getArtists()
         .then(artists => {
             $scope.results = Object.values(artists);

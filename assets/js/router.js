@@ -1,7 +1,6 @@
 "use strict";
 
 angular.module("inkmap").config(($stateProvider, $urlRouterProvider, MAPS) => {
-    $urlRouterProvider.otherwise("/");
     $stateProvider
         .state("home", {
             url: "/",
@@ -15,13 +14,26 @@ angular.module("inkmap").config(($stateProvider, $urlRouterProvider, MAPS) => {
                     templateUrl: "assets/partials/home.html"
                 },
                 "map@home" : {
-                    controller: "MapCtrl",
+                    controller: "ArtistMapCtrl",
                     templateUrl: "assets/partials/map.html"
                 },
                 "search@home": {
-                    controller: "SearchCtrl",
+                    controller: "ArtistSearchCtrl",
                     templateUrl: "assets/partials/search.html"
                 }
             }
+        })
+        .state("addArtist", {
+            url: "/new",
+            resolve: {
+                user: (AuthFactory) => AuthFactory.authenticate()
+            },
+            views: {
+                "": {
+                    controller: "AddArtistCtrl",
+                    templateUrl: "assets/partials/addArtist.html"
+                }
+            }
         });
+    $urlRouterProvider.otherwise("/");
 });
