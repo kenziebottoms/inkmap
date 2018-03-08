@@ -8,6 +8,7 @@ require("./directives");
 
 require("./ctrl/home");
 require("./ctrl/map");
+require("./ctrl/search");
 
 require("./factory/auth");
 require("./factory/artist");
