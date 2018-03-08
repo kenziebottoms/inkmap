@@ -11,4 +11,4 @@ angular.module("inkmap")
             url: "https://maps.googleapis.com/maps/api/geocode/json",
         },
         apiKey: "AIzaSyDrHGfvisSKQ6WtBNnjCmV14eUzFEjpGdw"
-    }):
+    });
