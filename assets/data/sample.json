@@ -1,31 +1,178 @@
 {
-    "-L706CjUBJ95SXq6__Kk": {
-        "email": "pari.corbitt@gmail.com",
-        "insta": "https://www.instagram.com/pari_corbitt/",
-        "loc": {
-            "lat": -37.7460575,
-            "lng": 144.963964
+    "artists": {
+        "-L706CjUBJ95SXq6__Kk": {
+            "email": "pari.corbitt@gmail.com",
+            "insta": "https://www.instagram.com/pari_corbitt/",
+            "loc": {
+                "lat": -37.7460575,
+                "lng": 144.963964
+            },
+            "name": "Pari Corbitt",
+            "tags": [
+                "black and grey",
+                "floral"
+            ]
         },
-        "name": "Pari Corbitt",
-        "tags": [
-            "black and grey",
-            "floral"
-        ]
-    },
-    "-L707SNxv7_eQlup--lL": {
-        "email": "dean.kalcoff@gmail.com",
-        "insta": "https://www.instagram.com/deankalcoff/",
-        "loc": {
-            "lat": -37.9712304,
-            "lng": 144.4913101
+        "-L707SNxv7_eQlup--lL": {
+            "email": "dean.kalcoff@gmail.com",
+            "insta": "https://www.instagram.com/deankalcoff/",
+            "loc": {
+                "lat": -37.9712304,
+                "lng": 144.4913101
+            },
+            "name": "Dean Kalcoff",
+            "tags": [
+                "neotrad",
+                "star wars",
+                "dinosaurs",
+                "spiders",
+                "bright colors"
+            ]
         },
-        "name": "Dean Kalcoff",
-        "tags": [
-            "neotrad",
-            "star wars",
-            "dinosaurs",
-            "spiders",
-            "bright colors"
-        ]
+        "-L71WpNkDGM5M3OL8f4r": {
+            "email": "daniqueipotattoo@hotmail.com",
+            "insta": "https://www.instagram.com/daniqueipo/",
+            "loc": {
+                "lat": 51.5285578,
+                "lng": 0.242025
+            },
+            "name": "Dani Queipo",
+            "tags": [
+                "traditional",
+                "American traditional",
+                "right color"
+            ]
+        },
+        "-L75bR63BHj2xjbaszWl": {
+            "email": "CJWTATTOOS@GMAIL.COM",
+            "insta": "https://www.instagram.com/chriswielk/",
+            "loc": {
+                "lat": 37.7251452,
+                "lng": -122.4648061
+            },
+            "name": "Chris Wielk",
+            "tags": [
+                "Japanese traditional"
+            ]
+        },
+        "-L75dCxGZOt9JKFexnNP": {
+            "insta": "https://www.instagram.com/shitwishtattoos/",
+            "loc": {
+                "lat": 42.2461445,
+                "lng": -83.6120432
+            },
+            "name": "Jon Larson",
+            "tags": [
+                "American traditional",
+                "bright color",
+                "traditional"
+            ]
+        },
+        "-L75du-bJ8WPokIA-Ke9": {
+            "email": "dale.tattoo@gmail.com",
+            "insta": "https://www.instagram.com/dvlewintertvttoos/",
+            "loc": {
+                "lat": -27.461636,
+                "lng": 153.004461
+            },
+            "name": "Dale Winter",
+            "tags": [
+                "Japanese traditional",
+                "Japanese neotrad",
+                "neotrad"
+            ]
+        },
+        "-L760YVA8D3dHYbrYQcl": {
+            "email": "mattwebbtattoo@gmail.com",
+            "insta": "https://www.instagram.com/mattwebbtattoo/",
+            "loc": {
+                "lat": 53.7435634,
+                "lng": -0.3464867
+            },
+            "name": "Matt Webb",
+            "tags": [
+                "neotrad",
+                "floral"
+            ]
+        },
+        "-L761F21up4ghkvH3Pkm": {
+            "email": "bradleandertattoo@gmail.com",
+            "insta": "https://www.instagram.com/bradleandertattoo/",
+            "loc": {
+                "lat": 53.4021816,
+                "lng": -1.5038851
+            },
+            "name": "Brad Leander",
+            "tags": [
+                "neotrad",
+                "floral",
+                "pop culture"
+            ]
+        },
+        "-L7Bd1CBmrEMwkwk781D": {
+            "email": "samkane2@hotmail.com",
+            "instagram": "https://www.instagram.com/samkanetattoo/",
+            "loc": {
+                "lat": -34.033982,
+                "lng": 151.10118
+            },
+            "name": "Sam Kane",
+            "tags": [
+                "traditional",
+                "neotraditional"
+            ]
+        },
+        "-L7Bdg26sGfCezM0ER4S": {
+            "instagram": "https://www.instagram.com/stefanistipple.tattoos/",
+            "loc": {
+                "lat": 39.9588226,
+                "lng": -75.6058243
+            },
+            "name": "Stefani Stipple",
+            "tags": [
+                "black and grey",
+                "fine line",
+                "geometric"
+            ]
+        },
+        "-L7BdvBvkdGCs4J8NLJ8": {
+            "instagram": "https://www.instagram.com/kelling_btl/",
+            "loc": {
+                "lat": 51.3995287,
+                "lng": 7.4300481999999874
+            },
+            "name": "Max Kelling",
+            "tags": [
+                "American traditional",
+                "bright color"
+            ]
+        },
+        "-L7BikNLnxvceRkADaru": {
+            "email": "magda.hanke@web.de",
+            "instagram": "https://www.instagram.com/magda_hanke/",
+            "loc": {
+                "lat": 53.560511,
+                "lng": 9.958298499999955
+            },
+            "name": "Magda Hanke",
+            "tags": [
+                "neotrad",
+                "floral"
+            ]
+        },
+        "-L7BjBGRowsvkx0gCUa6": {
+            "email": "Chrisstockingstattoo@gmail.com",
+            "instagram": "https://www.instagram.com/chrisstockings/",
+            "loc": {
+                "lat": 52.084287,
+                "lng": 0.4373729999999796
+            },
+            "name": "Chris Stockings",
+            "tags": [
+                "neotrad",
+                "girly",
+                "traditional"
+            ]
+        }
     }
 }
