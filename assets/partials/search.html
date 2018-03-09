@@ -1,5 +1,6 @@
 <div id="search">
     <input placeholder="Search artists" type="text" ng-model="term">
+    <a ng-href="/#!/new">Add new artist</a>
     <div id="results" ng-show="term">
         <div ng-repeat="result in results | filter:term" class="result">
             <h3>{{result.name}}</h3>
