@@ -10,5 +10,5 @@ angular.module("inkmap")
         GEOCODE: {
             url: "https://maps.googleapis.com/maps/api/geocode/json",
         },
-        apiKey: "AIzaSyDrHGfvisSKQ6WtBNnjCmV14eUzFEjpGdw"
+        apiKey: "AIzaSyBAhm7HGM77ClBfP8qpYIwt06Oi6kVTAXU"
     });

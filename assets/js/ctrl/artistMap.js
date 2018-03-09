@@ -2,9 +2,9 @@
 
 require("../../../dist/markerclusterer.js");
 
-angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, artists, NgMap, MAPS) {
+angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, artists, NgMap, GOOGLE) {
     $scope.artists = artists;
-    $scope.mapScript = `http://maps.google.com/maps/api/js?key=${MAPS.apiKey}`;
+    $scope.mapScript = `http://maps.google.com/maps/api/js?key=${GOOGLE.apiKey}`;
 
     // $scope.artists => coords
     let markers = Object.entries(artists).map(a => [a[1].loc.lat, a[1].loc.lng]);
