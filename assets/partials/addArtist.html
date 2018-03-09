@@ -1,4 +1,11 @@
-<div map-lazy-load="{{mapScript}}">
-    <input places-auto-complete types="['geocode']" on-place-changed="change()"/>
+<div map-lazy-load="{{mapScript}}" id="newArtist">
+    <div id="newArtistForm">
+        <input ng-model="artist.name" placeholder="Name">
+        <input ng-model="artist.email" placeholder="Email">
+        <input ng-model="artist.tags" placeholder="Tags">
+        <input places-auto-complete types="['geocode','establishment']" on-place-changed="change()" ng-model="address"/>
+    </div>
+    <ng-map class="map" zoom="9" center="[{{lat}},{{lng}}]" ng-switch="lat != undefined && lng != undefined">
+        <marker ng-switch-when="true" position="[{{lat}}, {{lng}}]" title="{{address}}"></marker>
+    </ng-map>
 </div>
-{{lat}}, {{lng}}

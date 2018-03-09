@@ -5,10 +5,21 @@ ng-map {
 html, body {
     margin: 0;
 }
-#home {
+#home, #newArtist {
     height: 100vh;
     display: grid;
     grid-template: 1fr / 50% 50%;
+}
+#newArtistForm {
+    input {
+        font-size: 1rem;
+        display: block;
+        width: 100%;
+        padding: .25em 1em;
+        border-radius: 0;
+        border-width: 0 0 1px 0;
+        border-color: #bbb;
+    }
 }
 #search {
     #results {

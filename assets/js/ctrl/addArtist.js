@@ -6,8 +6,7 @@ angular.module("inkmap").controller("AddArtistCtrl", function ($scope, GOOGLE) {
     let autocomplete;
     $scope.initialize = () => {
         autocomplete = new google.maps.places.Autocomplete(
-            (document.getElementById("newLocation")),
-            { types: "['geocode', 'address', 'establishments' ]" }
+            (document.getElementById("newLocation"))
         );
     };
     $scope.change = function() {
