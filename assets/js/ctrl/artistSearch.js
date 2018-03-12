@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, ArtistFactory, GeocodeFactory) {
+angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, $rootScope, ArtistFactory, GeocodeFactory) {
     ArtistFactory.getArtists()
         .then(artists => {
             $scope.results = Object.values(artists);
@@ -13,4 +13,8 @@ angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, ArtistF
                 $scope.results[index].locale = response[index];
             });
         });
+
+    $rootScope.$on("focusArtist", (event, data) => {
+        
+    });
 });

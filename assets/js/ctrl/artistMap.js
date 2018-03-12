@@ -2,7 +2,7 @@
 
 require("../../../dist/markerclusterer.js");
 
-angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, artists, NgMap, GOOGLE) {
+angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, $rootScope, artists, NgMap, GOOGLE) {
     $scope.artists = artists;
     $scope.mapScript = `http://maps.google.com/maps/api/js?key=${GOOGLE.apiKey}&libraries=places`;
 
@@ -24,7 +24,7 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, artists, 
             var latLng = new google.maps.LatLng(artist.loc.lat, artist.loc.lng);
             let marker = new google.maps.Marker({ position: latLng, title: artist.name });
             let info = new google.maps.InfoWindow({
-                content: `<h3 ng-click="showArtist('${artist.key}')">${artist.name}</h3><p>${artist.tags.join(", ")}`
+                content: `<h3 id="${artist.key}">${artist.name}</h3><p>${artist.tags.join(", ")}`
             });
             marker.addListener('click', () => {
                 info.open(map, marker);
@@ -34,7 +34,9 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, artists, 
         $scope.markerClusterer = new MarkerClusterer(map, dynMarkers, {});
     });
 
-    $scope.showArtist = key => {
-
+    $scope.click = () => {
+        if (event.target.tagName == "H3") {
+            $rootScope.$broadcast("focusArtist", event.target.id);
+        }
     };
 });
