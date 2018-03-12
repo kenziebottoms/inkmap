@@ -7,10 +7,10 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, artists, 
     $scope.mapScript = `http://maps.google.com/maps/api/js?key=${GOOGLE.apiKey}&libraries=places`;
 
     // $scope.artists => coords
-    let markers = Object.entries(artists).map(a => [a[1].loc.lat, a[1].loc.lng]);
-    markers = markers.map(a => {
-        a = { position: a };
-        return a;
+    let artistInfo = Object.entries(artists);
+    artistInfo = artistInfo.map(a => {
+        a[1].key = a[0];
+        return a[1];
     });
 
     // marker cluster image paths
@@ -20,10 +20,21 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, artists, 
     let dynMarkers = [];
     NgMap.getMap().then(function (map) {
         map.markers = [];
-        for (let marker of markers) {
-            var latLng = new google.maps.LatLng(marker.position[0], marker.position[1]);
-            dynMarkers.push(new google.maps.Marker({ position: latLng }));
+        for (let artist of artistInfo) {
+            var latLng = new google.maps.LatLng(artist.loc.lat, artist.loc.lng);
+            let marker = new google.maps.Marker({ position: latLng, title: artist.name });
+            let info = new google.maps.InfoWindow({
+                content: `<h3 ng-click="showArtist('${artist.key}')">${artist.name}</h3><p>${artist.tags.join(", ")}`
+            });
+            marker.addListener('click', () => {
+                info.open(map, marker);
+            });
+            dynMarkers.push(marker);
         }
         $scope.markerClusterer = new MarkerClusterer(map, dynMarkers, {});
     });
+
+    $scope.showArtist = key => {
+
+    };
 });
