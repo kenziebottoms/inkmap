@@ -1,7 +1,7 @@
 <div id="search">
     <input placeholder="Search artists" type="text" ng-model="term">
     <a ng-href="/#!/new">Add new artist</a>
-    <div id="results" ng-show="term">
+    <div id="results" ng-show="term && !focusedArtist">
         <div ng-repeat="result in results | filter:term" class="result">
             <h3>{{result.name}}</h3>
             <h4 ng-show="result.locale">{{result.locale}}</h4>
@@ -9,6 +9,14 @@
             <div class="tags">
                 <span ng-repeat="tag in result.tags" class="tag">{{tag}}</span>
             </div>
+        </div>
+    </div>
+    <div id="focusedArtist" ng-show="focusedArtist">
+        <h3>{{focusedArtist.name}}</h3>
+        <h4 ng-show="focusedArtist.locale">{{focusedArtist.locale}}</h4>
+        <h5>{{focusedArtist.email.toLowerCase()}}</h5>
+        <div class="tags">
+            <span ng-repeat="tag in focusedArtist.tags" class="tag">{{tag}}</span>
         </div>
     </div>
 </div>

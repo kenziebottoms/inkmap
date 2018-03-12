@@ -40,5 +40,15 @@ angular.module("inkmap").factory("ArtistFactory", function($q, $http, FIREBASE, 
         });
     };
 
-    return {getArtists, addArtist};
+    const getArtist = key => {
+        return $q((resolve, reject) => {
+            $http.get(`${FIREBASE.db}/artists/${key}.json`)
+                .then(({data}) => {
+                    resolve(data);
+                })
+                .catch(err => reject(err));
+        });
+    };
+
+    return {getArtists, addArtist, getArtist};
 });
