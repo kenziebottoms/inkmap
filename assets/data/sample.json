@@ -402,8 +402,7 @@
             },
             "name": "Tom Wagstaff",
             "tags": [
-                "neotrad",
-                ""
+                "neotrad"
             ]
         },
         "-L7QniUbdHMjar9eIgQY": {
@@ -418,6 +417,57 @@
                 "neotrad",
                 "dark",
                 "elemental"
+            ]
+        },
+        "-L7R7MW2nNlw5o9pqsHC": {
+            "instagram": "https://www.instagram.com/squirestrahan/",
+            "loc": {
+                "lat": 27.894302,
+                "lng": -82.33030610000003
+            },
+            "name": "Squire Strahan",
+            "tags": [
+                "floral",
+                "dark",
+                "neotrad",
+                "stylized realism"
+            ]
+        },
+        "-L7R81Tt5pWOL6O4FBeG": {
+            "instagram": "https://www.instagram.com/dalmirodalmont/",
+            "loc": {
+                "lat": 51.5073509,
+                "lng": -0.12775829999998223
+            },
+            "name": "Dalmiro Dalmont",
+            "tags": [
+                "Japanese traditional"
+            ]
+        },
+        "-L7R8QsMPgw9aLnO4HHq": {
+            "email": "Jeroengardenier@Gmail.com",
+            "instagram": "https://www.instagram.com/jeroengardenier/",
+            "loc": {
+                "lat": 52.3682585,
+                "lng": 4.87538219999999
+            },
+            "name": "Jeroen Gardenier",
+            "tags": [
+                "Japanese traditional",
+                "neotrad"
+            ]
+        },
+        "-L7R8k90ua_nOR_dflkt": {
+            "email": "Sabeontheroad@gmail.com",
+            "instagram": "https://www.instagram.com/claudiadesabe/",
+            "loc": {
+                "lat": 51.5073509,
+                "lng": -0.12775829999998223
+            },
+            "name": "Claudia De Sabe",
+            "tags": [
+                "Japanese traditional",
+                "neotrad"
             ]
         }
     }
