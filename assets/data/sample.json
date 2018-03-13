@@ -402,7 +402,8 @@
             },
             "name": "Tom Wagstaff",
             "tags": [
-                "neotrad"
+                "neotrad",
+                ""
             ]
         },
         "-L7QniUbdHMjar9eIgQY": {
@@ -467,7 +468,112 @@
             "name": "Claudia De Sabe",
             "tags": [
                 "Japanese traditional",
-                "neotrad"
+                "neotrad",
+                ""
+            ]
+        },
+        "-L7UeFa47dCyLFDMBQfb": {
+            "instagram": "https://www.instagram.com/horitomo_stateofgrace/",
+            "loc": {
+                "lat": 37.3493976,
+                "lng": -121.8939823
+            },
+            "name": "Horitomo",
+            "tags": [
+                "Japanese traditional",
+                "cats",
+                "monmon cats"
+            ]
+        },
+        "-L7Uew4-9uu98ExhSkdN": {
+            "instagram": "https://www.instagram.com/philhatchetyau/",
+            "loc": {
+                "lat": 32.7150263,
+                "lng": -117.16045459999998
+            },
+            "name": "Phil Hatchet-Yau",
+            "tags": [
+                "American traditional",
+                "tigers",
+                ""
+            ]
+        },
+        "-L7UfIoFLSlcjBgjpQGC": {
+            "email": "georginatattoo@gmail.com",
+            "instagram": "https://www.instagram.com/georginaliliane/",
+            "loc": {
+                "lat": 51.06554750000001,
+                "lng": -1.3133397999999943
+            },
+            "name": "Georgina Liliane",
+            "tags": [
+                "neotrad",
+                "non-male",
+                "horses",
+                "female"
+            ]
+        },
+        "-L7UgKzsAP83XsFWbyez": {
+            "email": "nomi.tattoo@gmail.com",
+            "instagram": "https://www.instagram.com/lizard__milk/",
+            "loc": {
+                "lat": 49.2830802,
+                "lng": -123.10707360000004
+            },
+            "name": "Nomi Chi",
+            "tags": [
+                "queer",
+                "nonbinary",
+                "non-male",
+                "dark",
+                "black",
+                "black and gray",
+                "scribbly"
+            ]
+        },
+        "-L7UgnvzaDBiIHyF5yGk": {
+            "email": "lucyoconnelltattoo@gmail.com",
+            "instagram": "https://www.instagram.com/lucylucyhorsehead/",
+            "loc": {
+                "lat": 53.795967,
+                "lng": -1.5401910000000498
+            },
+            "name": "Lucy O'Connell",
+            "tags": [
+                "female",
+                "non-male",
+                "neotrad",
+                "floral"
+            ]
+        },
+        "-L7UhFSGNlf6uiMzsUKR": {
+            "email": "revoltingworshiptattoos@gmail.com",
+            "instagram": "https://www.instagram.com/revoltingworship/",
+            "loc": {
+                "lat": 40.01799099999999,
+                "lng": -82.87238500000001
+            },
+            "name": "Nate Burns",
+            "tags": [
+                "black",
+                "black and gray",
+                "engraving",
+                "illustration"
+            ]
+        },
+        "-L7UhflQQ7dGkw6X8Iqu": {
+            "email": "",
+            "instagram": "https://www.instagram.com/s6girl/",
+            "loc": {
+                "lat": 51.56029299999999,
+                "lng": 0.2202838000000611
+            },
+            "name": "Becca",
+            "tags": [
+                "neotrad",
+                "floral",
+                "birds",
+                "bright color"
             ]
         }
     }
