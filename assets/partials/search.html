@@ -4,6 +4,9 @@
     <div id="results" ng-show="term && !focusedArtist">
         <div ng-repeat="result in results | filter:term" class="result">
             <h3>{{result.name}}</h3>
+            <p>
+                <a target="blank" ng-show="result.insta" ng-href="{{result.insta}}">@{{result.insta_handle}}</a>
+            </p>
             <h4 ng-show="result.locale">{{result.locale}}</h4>
             <h5>{{result.email.toLowerCase()}}</h5>
             <div class="tags">

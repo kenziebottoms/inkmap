@@ -2,7 +2,7 @@
 <div map-lazy-load="{{mapScript}}" map-lazy-load-params="{{mapScript}}" id="newArtist">
     <div id="newArtistForm">
         <input ng-model="artist.name" placeholder="Name">
-        <input ng-model="artist.instagram" placeholder="Instagram">
+        <input ng-model="artist.insta" placeholder="Instagram">
         <input ng-model="artist.email" placeholder="Email">
         <input ng-model="tags" placeholder="Tags">
         <input places-auto-complete types="['geocode','establishment']" on-place-changed="change()" ng-model="address"/>

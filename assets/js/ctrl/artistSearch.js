@@ -3,7 +3,11 @@
 angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, $rootScope, ArtistFactory, GeocodeFactory) {
     ArtistFactory.getArtists()
         .then(artists => {
-            $scope.artists = artists;
+            $scope.artists = [];
+            for (let a in artists) {
+                artists[a].insta_handle = artists[a].insta.split("/")[3];
+                $scope.artists.push(artists[a]);
+            }
             $scope.results = Object.values(artists);
             return Promise.all(Object.values(artists).map(a => {
                 return GeocodeFactory.reverseGeocode(a.loc.lat, a.loc.lng);
@@ -13,6 +17,9 @@ angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, $rootSc
             $scope.results.map((r, index) => {
                 $scope.results[index].locale = response[index];
             });
+        })
+        .catch(err => {
+            console.log(err);
         });
 
     $rootScope.$on("focusArtist", (event, data) => {

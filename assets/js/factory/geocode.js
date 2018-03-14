@@ -11,7 +11,11 @@ angular.module("inkmap").factory("GeocodeFactory", function($q, $http, GOOGLE) {
                         let addressComponents = results[0].address_components;
                         let state = addressComponents.find(a => a.types.includes("administrative_area_level_1"));
                         let country = addressComponents.find(a => a.types.includes("country"));
-                        resolve(`${state.long_name}, ${country.long_name}`);
+                        if (state && country) {
+                            resolve(`${state.long_name}, ${country.long_name}`);
+                        } else {
+                            resolve("");
+                        }
                     } else {
                         reject("no results or maybe you've over-api'd");
                     }
