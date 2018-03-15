@@ -2,20 +2,11 @@
 
 require("../../../dist/markerclusterer.js");
 
-angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, $rootScope, artists, NgMap, GOOGLE) {
+angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, $rootScope, artists, NgMap, GOOGLE, ArtistFactory) {
     $scope.artists = artists;
     $scope.mapScript = `http://maps.google.com/maps/api/js?key=${GOOGLE.apiKey}&libraries=places`;
 
     // google maps initialization
-    let goldStar = {
-        path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
-        anchor: new google.maps.Point(130, 150),
-        fillColor: 'yellow',
-        fillOpacity: 0.8,
-        scale: 0.13,
-        strokeColor: 'gold',
-        strokeWeight: 1
-    };
     MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_PATH_ = 'assets/img/m';
 
     // $scope.artists => coords
@@ -43,7 +34,6 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, $rootScop
 
         // listen for non-point clicks
         google.maps.event.addListener(map, 'click', (event) => {
-
             $scope.activeLatLng = {
                 lat: event.latLng.lat(),
                 lng: event.latLng.lng()
@@ -54,11 +44,21 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, $rootScop
                 $scope.activeMarker.setMap(null);
             }
             // make a new one
+            let goldStar = {
+                path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+                anchor: new google.maps.Point(130, 150),
+                fillColor: 'yellow',
+                fillOpacity: 0.8,
+                scale: 0.13,
+                strokeColor: 'gold',
+                strokeWeight: 1
+            };
             $scope.activeMarker = new google.maps.Marker({
                 position: $scope.activeLatLng,
                 icon: goldStar,
                 map: map
             });
+            $rootScope.$broadcast("centerOn", $scope.activeLatLng);
         });
     });
 

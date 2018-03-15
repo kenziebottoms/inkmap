@@ -3,11 +3,9 @@
 angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, $rootScope, ArtistFactory, GeocodeFactory) {
     ArtistFactory.getArtists()
         .then(artists => {
-            $scope.artists = [];
             for (let a in artists) {
                 artists[a].insta_handle = artists[a].insta.split("/")[3];
                 artists[a].key = a;
-                $scope.artists.push(artists[a]);
             }
             $scope.results = Object.values(artists);
             return Promise.all(Object.values(artists).map(a => {
@@ -27,5 +25,8 @@ angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, $rootSc
         if ($scope.results) {
             $scope.focusedArtist = $scope.artists.find(a => a.key == data);
         }
+    });
+    $rootScope.$on("centerOn", (event, {lat, lng}) => {
+        $scope.results = ArtistFactory.sortByDistanceFrom($scope.results, lat, lng);
     });
 });
