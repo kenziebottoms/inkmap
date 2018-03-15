@@ -29,3 +29,7 @@ html, body {
         display: inline-block;
     }
 }
+#search {
+    box-sizing: border-box;
+    overflow: scroll;
+}
