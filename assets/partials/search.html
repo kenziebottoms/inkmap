@@ -16,6 +16,9 @@
     </div>
     <div id="focusedArtist" ng-show="focusedArtist">
         <h3>{{focusedArtist.name}}</h3>
+        <p>
+            <a target="blank" ng-show="focusedArtist.insta" ng-href="{{focusedArtist.insta}}">@{{focusedArtist.insta_handle}}</a>
+        </p>
         <h4 ng-show="focusedArtist.locale">{{focusedArtist.locale}}</h4>
         <h5>{{focusedArtist.email.toLowerCase()}}</h5>
         <div class="tags">

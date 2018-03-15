@@ -11,14 +11,14 @@ angular.module("inkmap").factory("ArtistFactory", function($q, $http, FIREBASE, 
         });
     };
 
-    const addArtist = ({name, email, tags, loc, instagram}) => {
+    const addArtist = ({name, email, tags, loc, insta}) => {
         return $q((resolve, reject) => {
             searchArtists("name", name)
                 .then(artists => {
                     if (artists) {
                         return reject("Duplicate artist.");
                     } else {
-                        $http.post(`${FIREBASE.db}/artists.json`,{name, email, tags, loc, instagram})
+                        $http.post(`${FIREBASE.db}/artists.json`,{name, email, tags, loc, insta})
                             .then(response => {
                                 if (response.status == 200) {
                                     $location.path("/");

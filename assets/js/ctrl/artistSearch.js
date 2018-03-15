@@ -6,6 +6,7 @@ angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, $rootSc
             $scope.artists = [];
             for (let a in artists) {
                 artists[a].insta_handle = artists[a].insta.split("/")[3];
+                artists[a].key = a;
                 $scope.artists.push(artists[a]);
             }
             $scope.results = Object.values(artists);
@@ -24,7 +25,7 @@ angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, $rootSc
 
     $rootScope.$on("focusArtist", (event, data) => {
         if ($scope.results) {
-            $scope.focusedArtist = $scope.artists[data];
+            $scope.focusedArtist = $scope.artists.find(a => a.key == data);
         }
     });
 });
