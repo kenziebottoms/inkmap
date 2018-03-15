@@ -308,8 +308,7 @@
             "tags": [
                 "neotrad",
                 "queer",
-                "non-male",
-                ""
+                "non-male"
             ]
         },
         "-L7PwXk99UD7dSM72-op": {
@@ -333,7 +332,7 @@
                 "lat": 36.1124236,
                 "lng": -86.74643609999998
             },
-            "name": "Mitch Hoggardd",
+            "name": "Mitch Hoggard",
             "tags": [
                 "traditional",
                 "American traditional",
@@ -402,8 +401,7 @@
             },
             "name": "Tom Wagstaff",
             "tags": [
-                "neotrad",
-                ""
+                "neotrad"
             ]
         },
         "-L7QniUbdHMjar9eIgQY": {
@@ -468,8 +466,7 @@
             "name": "Claudia De Sabe",
             "tags": [
                 "Japanese traditional",
-                "neotrad",
-                ""
+                "neotrad"
             ]
         },
         "-L7UeFa47dCyLFDMBQfb": {
@@ -494,8 +491,7 @@
             "name": "Phil Hatchet-Yau",
             "tags": [
                 "American traditional",
-                "tigers",
-                ""
+                "tigers"
             ]
         },
         "-L7UfIoFLSlcjBgjpQGC": {
@@ -597,8 +593,7 @@
             },
             "name": "Aaron Ashworth",
             "tags": [
-                "American traditional",
-                ""
+                "American traditional"
             ]
         },
         "-L7_aOLoQjNNXB6OcRbA": {
@@ -785,7 +780,7 @@
             ]
         },
         "-L7_hAV0PWynfcTKbC4g": {
-            "insta": "ninmesarra",
+            "insta": "https://instagram.com/ninmesarra",
             "loc": {
                 "lat": 50.937531,
                 "lng": 6.960278600000038
@@ -839,6 +834,265 @@
                 "bright color",
                 "tigers",
                 "floral"
+            ]
+        },
+        "-L7e-iUZv9gLdoAPrDmr": {
+            "email": "micotattoo6162@gmail.com",
+            "insta": "https://www.instagram.com/micotattoo/",
+            "loc": {
+                "lat": 35.17955429999999,
+                "lng": 129.07564160000004
+            },
+            "name": "Mico",
+            "tags": [
+                "mandala",
+                "geometric",
+                "dark",
+                "neotrad"
+            ]
+        },
+        "-L7e146-57tMgzh7eq-u": {
+            "email": "Alexzampirritattoos@gmail.com",
+            "insta": "https://www.instagram.com/azamp_/",
+            "loc": {
+                "lat": 40.4064881,
+                "lng": -75.50184769999998
+            },
+            "name": "Alex Zampirri",
+            "tags": [
+                "American traditional",
+                "neotrad",
+                "bright color"
+            ]
+        },
+        "-L7e2VLaB8SaDtR13JRU": {
+            "email": "6682robjunod@gmail.com",
+            "insta": "https://www.instagram.com/robjunod/",
+            "loc": {
+                "lat": 37.2291815,
+                "lng": -93.29475120000001
+            },
+            "name": "Rob Junod",
+            "tags": [
+                "Japanese traditional"
+            ]
+        },
+        "-L7e3kCm0XFQiI0fwbcr": {
+            "email": "",
+            "insta": "https://www.instagram.com/ian_ildet/",
+            "loc": {
+                "lat": -34.60368440000001,
+                "lng": -58.381559100000004
+            },
+            "name": "Ian Wahnshaffe",
+            "tags": [
+                "Japanese traditional",
+                "Japanese neotrad",
+                "neotrad",
+                "bright color"
+            ]
+        },
+        "-L7e5jv0ItoqW1YmCzml": {
+            "insta": "https://www.instagram.com/monikadarling/",
+            "loc": {
+                "lat": 43.6602101,
+                "lng": -79.41545389999999
+            },
+            "name": "Monika Vanasse",
+            "tags": [
+                "American traditional",
+                "neotrad",
+                "female",
+                "non-male"
+            ]
+        },
+        "-L7e6BovvX61pmuRW77i": {
+            "email": "tatueringvisby@gmail.com",
+            "insta": "https://www.instagram.com/kijabarudi/",
+            "loc": {
+                "lat": 57.6355946,
+                "lng": 18.307409199999938
+            },
+            "name": "Kija Barudi",
+            "tags": [
+                "neotrad",
+                "animals",
+                "female",
+                "non-male"
+            ]
+        },
+        "-L7e6vYucOry96xU5Ve6": {
+            "insta": "https://www.instagram.com/lizhapi/",
+            "loc": {
+                "lat": -31.9307198,
+                "lng": 115.85960219999993
+            },
+            "name": "Elizabeth Hapi",
+            "tags": [
+                "female",
+                "non-male",
+                "neotrad"
+            ]
+        },
+        "-L7e7ItWceJ5_Ak8dARP": {
+            "email": "zanependergast@gmail.com",
+            "insta": "https://www.instagram.com/zanependergast/",
+            "loc": {
+                "lat": 36.1884944,
+                "lng": -86.72888369999998
+            },
+            "name": "Zane Pendergast",
+            "tags": [
+                "American traditional",
+                "neotrad"
+            ]
+        },
+        "-L7e8bGNPrxLRu0TzEzs": {
+            "email": "eltanquetattooer@gmail.com",
+            "insta": "https://www.instagram.com/el_tanque_tattooer/",
+            "loc": {
+                "lat": 41.87779150000001,
+                "lng": 12.523409300000026
+            },
+            "name": "El Tanque",
+            "tags": [
+                "neotrad",
+                "mandala",
+                "geometric",
+                "bright color"
+            ]
+        },
+        "-L7e8zx4imNLBT9z_YYh": {
+            "email": "brandochiesa.appointments@gmail.com",
+            "insta": "https://www.instagram.com/brandochiesa/",
+            "loc": {
+                "lat": 43.7695604,
+                "lng": 11.25581360000001
+            },
+            "name": "Brando Chiesa",
+            "tags": [
+                "pastel gore",
+                "pink",
+                "bright color",
+                "body horror",
+                "anime",
+                "hentai",
+                "pokemon"
+            ]
+        },
+        "-L7e9bVe4wrApPxMIK85": {
+            "insta": "https://www.instagram.com/fabioonorini/",
+            "loc": {
+                "lat": 45.0573607,
+                "lng": 7.671222400000033
+            },
+            "name": "Fabio Onorini",
+            "tags": [
+                "American traditional"
+            ]
+        },
+        "-L7e9lyo90t3Xac-XjYL": {
+            "email": "Nembotattoo@gmail.com",
+            "insta": "https://www.instagram.com/fabio_nembo/",
+            "loc": {
+                "lat": 41.87779150000001,
+                "lng": 12.523409300000026
+            },
+            "name": "Fabio Nembo",
+            "tags": [
+                "American traditional"
+            ]
+        },
+        "-L7eA_IKenIPvh4Ov3jB": {
+            "insta": "https://www.instagram.com/gianluca_artico/",
+            "loc": {
+                "lat": 41.7712882,
+                "lng": 12.227009599999974
+            },
+            "name": "Gianluca Artico",
+            "tags": [
+                "American traditional",
+                "Japanese traditional"
+            ]
+        },
+        "-L7es7b1-TpD2XfwNJik": {
+            "email": "DESIGNS4SAM@YAHOO.CO.UK",
+            "insta": "https://www.instagram.com/sam_ford_tattoos/",
+            "loc": {
+                "lat": 53.353077,
+                "lng": -2.855109999999968
+            },
+            "name": "Samantha Ford",
+            "tags": [
+                "portraits",
+                "black and gray",
+                "neotrad",
+                "floral",
+                "female",
+                "non-male"
+            ]
+        },
+        "-L7esXgfYaB5CR6HnWtS": {
+            "email": "marcofgiovanni@gmail.com",
+            "insta": "https://www.instagram.com/thehallowedharetattoo/",
+            "loc": {
+                "lat": 52.6308859,
+                "lng": 1.2973550000000387
+            },
+            "name": "Marco Giovanni",
+            "tags": [
+                "neotrad",
+                "animals"
+            ]
+        },
+        "-L7etku0XxWls9iePunP": {
+            "email": "Therichwren@gmail.com",
+            "insta": "https://www.instagram.com/therichwren/",
+            "loc": {
+                "lat": 40.211702,
+                "lng": -75.139905
+            },
+            "name": "Rich Wren",
+            "tags": [
+                "neotrad",
+                "bright color"
+            ]
+        },
+        "-L7euFKipyj-m1kQmczW": {
+            "email": "vontomatattoo@gmail.com",
+            "insta": "https://www.instagram.com/vontoma/",
+            "loc": {
+                "lat": 42.3600825,
+                "lng": -71.05888010000001
+            },
+            "name": "Von Toma",
+            "tags": [
+                "American traditional"
+            ]
+        },
+        "-L7euY4wUrqDN6UlGSH-": {
+            "email": "lo.marie.tattoo@gmail.com",
+            "insta": "https://www.instagram.com/lo_marie_s/",
+            "loc": {
+                "lat": 53.4835718,
+                "lng": -2.2314062
+            },
+            "name": "Lauren Marie Sutton",
+            "tags": [
+                "female",
+                "non-male"
+            ]
+        },
+        "-L7evBGNhqn2DhoGYXBK": {
+            "insta": "https://www.instagram.com/horikoii/",
+            "loc": {
+                "lat": 35.17955429999999,
+                "lng": 129.07564160000004
+            },
+            "name": "Horikoi Young-jin Jeon",
+            "tags": [
+                "Japanese traditional",
+                "bright color"
             ]
         }
     }

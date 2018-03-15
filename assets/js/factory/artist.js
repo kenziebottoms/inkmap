@@ -18,6 +18,8 @@ angular.module("inkmap").factory("ArtistFactory", function($q, $http, FIREBASE, 
                     if (artists) {
                         return reject("Duplicate artist.");
                     } else {
+                        tags = tags.filter(t => t);
+                        console.log(tags);
                         $http.post(`${FIREBASE.db}/artists.json`,{name, email, tags, loc, insta})
                             .then(response => {
                                 if (response.status == 200) {
