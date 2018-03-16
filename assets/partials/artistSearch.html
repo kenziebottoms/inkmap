@@ -1,26 +1,7 @@
 <input placeholder="Search artists" type="text" ng-model="term" ng-click="focusedArtist = null">
 <a ng-href="/#!/new">Add new artist</a>
-<div id="focusedArtist" ng-show="focusedArtist" class="result">
-    <h3>{{focusedArtist.name}}</h3>
-    <p>
-        <a target="blank" ng-show="focusedArtist.insta" ng-href="{{focusedArtist.insta}}">@{{focusedArtist.insta_handle}}</a>
-    </p>
-    <h4 ng-show="focusedArtist.locale">{{focusedArtist.locale}}</h4>
-    <h5>{{focusedArtist.email.toLowerCase()}}</h5>
-    <div class="tags">
-        <span ng-repeat="tag in focusedArtist.tags" class="tag">{{tag}}</span>
-    </div>
+<div id="focusedArtist" ng-show="focusedArtist" class="result" ng-include="'assets/partials/artistCard.html'" ng-repeat="artist in [focusedArtist]">
 </div>
 <div id="results">
-    <div ng-repeat="result in results | filter:term" class="result">
-        <h3>{{result.name}}</h3>
-        <p>
-            <a target="blank" ng-show="result.insta" ng-href="{{result.insta}}">@{{result.insta_handle}}</a>
-        </p>
-        <h4 ng-show="result.locale">{{result.locale}}</h4>
-        <h5>{{result.email.toLowerCase()}}</h5>
-        <div class="tags">
-            <span ng-repeat="tag in result.tags" class="tag">{{tag}}</span>
-        </div>
-    </div>
+    <div ng-include="'assets/partials/artistCard.html'" ng-repeat="artist in results" class="result"></div>
 </div>
