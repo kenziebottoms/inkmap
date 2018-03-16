@@ -32,6 +32,9 @@ html, body {
 #search {
     box-sizing: border-box;
     overflow: scroll;
+    .result {
+        padding: .5rem 1rem;
+    }
 }
 #focusedArtist {
     background: #eef;
