@@ -7,5 +7,5 @@
 <div id="focusedArtist" ng-show="focusedArtist" class="result" ng-include="'assets/partials/artistCard.html'" ng-repeat="artist in [focusedArtist]">
 </div>
 <div id="results">
-    <div ng-include="'assets/partials/artistCard.html'" ng-repeat="artist in results" class="result"></div>
+    <div ng-include="'assets/partials/artistCard.html'" ng-repeat="artist in results | filter:term" class="result"></div>
 </div>
