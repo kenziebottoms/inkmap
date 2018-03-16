@@ -11,6 +11,13 @@ h1,h2,h3 {
     font-weight: 400;
     font-family: "Roboto Slab", serif;
 }
+input {
+    border: .5px solid #0001;
+    padding: .25rem .5rem;
+    box-shadow: none;
+    border-radius: 0;
+    font: inherit;
+}
 i {
     vertical-align: middle;
 }
@@ -45,13 +52,9 @@ i {
 }
 #newArtistForm {
     input {
-        font-size: 1rem;
         display: block;
         width: 100%;
-        padding: .25em 1em;
-        border-radius: 0;
         border-width: 0 0 1px 0;
-        border-color: #bbb;
     }
 }
 .tags {
