@@ -16,17 +16,18 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, $rootScop
         return a[1];
     });
 
+
     // gets markers and clusters them
     let dynMarkers = [];
     NgMap.getMap().then(function (map) {
+        let info = new google.maps.InfoWindow();
         for (let artist of artistInfo) {
             var latLng = new google.maps.LatLng(artist.loc.lat, artist.loc.lng);
             let marker = new google.maps.Marker({ position: latLng, title: artist.name });
-            let info = new google.maps.InfoWindow({
-                content: `<h3 id="${artist.key}">${artist.name}</h3><p>${artist.tags.join(", ")}`
-            });
             marker.addListener('click', () => {
+                info.setContent(`<h3>${artist.name}</h3><p>${artist.tags.join(", ")}`);
                 info.open(map, marker);
+                $rootScope.$broadcast("focusArtist", marker.title);
             });
             dynMarkers.push(marker);
         }
@@ -34,6 +35,8 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, $rootScop
 
         // listen for non-point clicks
         google.maps.event.addListener(map, 'click', (event) => {
+            $rootScope.$broadcast("focusArtist", null);
+            info.close();
             $scope.activeLatLng = {
                 lat: event.latLng.lat(),
                 lng: event.latLng.lng()
@@ -64,7 +67,7 @@ angular.module("inkmap").controller("ArtistMapCtrl", function ($scope, $rootScop
 
     $scope.click = () => {
         if (event.target.tagName == "H3") {
-            $rootScope.$broadcast("focusArtist", event.target.id);
+            $rootScope.$broadcast("focusArtist", event.target.innerHTML);
         }
     };
 });

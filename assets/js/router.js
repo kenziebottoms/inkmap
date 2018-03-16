@@ -19,7 +19,7 @@ angular.module("inkmap").config(($stateProvider, $urlRouterProvider) => {
                 },
                 "search@home": {
                     controller: "ArtistSearchCtrl",
-                    templateUrl: "assets/partials/search.html"
+                    templateUrl: "assets/partials/artistSearch.html"
                 }
             }
         })

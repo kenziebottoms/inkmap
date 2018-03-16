@@ -22,8 +22,11 @@ angular.module("inkmap").controller("ArtistSearchCtrl", function($scope, $rootSc
         });
 
     $rootScope.$on("focusArtist", (event, data) => {
+        if (data == null) {
+            $scope.focusedArtist = null;
+        }
         if ($scope.results) {
-            $scope.focusedArtist = $scope.artists.find(a => a.key == data);
+            $scope.focusedArtist = $scope.results.find(a => a.name == data);
         }
     });
     $rootScope.$on("centerOn", (event, {lat, lng}) => {
