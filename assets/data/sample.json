@@ -1320,6 +1320,117 @@
                 "wolves",
                 "busts"
             ]
+        },
+        "-L7kuLFOXROJ_fhRu-yJ": {
+            "insta": "https://www.instagram.com/elchupacabrad/",
+            "loc": {
+                "lat": 35.925885,
+                "lng": -86.87273979999998
+            },
+            "name": "Brad Hill",
+            "tags": [
+                "neotrad",
+                "superheroes",
+                "Japanese traditional"
+            ]
+        },
+        "-L7kv7HxPC0ccS3XtG4f": {
+            "email": "murrayftw@gmail.com",
+            "insta": "https://www.instagram.com/murraysell/",
+            "loc": {
+                "lat": 35.925885,
+                "lng": -86.87273979999998
+            },
+            "name": "Murray Sell",
+            "tags": [
+                "American traditional",
+                "bright color"
+            ]
+        },
+        "-L7kw7mb69p8606BBPHj": {
+            "insta": "https://www.instagram.com/hawaikatattoo/",
+            "loc": {
+                "lat": 46.482526,
+                "lng": 30.723309500000028
+            },
+            "name": "Jenia Storik",
+            "tags": [
+                "trippy",
+                "American traditional",
+                "female",
+                "non-male",
+                "bright color"
+            ]
+        },
+        "-LB6dkqoMcRKpFS7LH79": {
+            "email": "davidschaston@gmail.com",
+            "insta": "https://www.instagram.com/davidchastontattoo/",
+            "loc": {
+                "lat": -33.9303,
+                "lng": 18.42213000000004
+            },
+            "name": "David Chaston",
+            "tags": [
+                "American traditional",
+                "portraits",
+                "neotrad",
+                "Japanese neotrad"
+            ]
+        },
+        "-LB6eGkmNxrXgCymOvaw": {
+            "email": "ZackDeatonTattoo@gmail.com",
+            "insta": "https://www.instagram.com/zackdeaton/",
+            "loc": {
+                "lat": 36.176546,
+                "lng": -86.75082099999997
+            },
+            "name": "Zack Deaton",
+            "tags": [
+                "American traditional"
+            ]
+        },
+        "-LB6exHTJxnW7a3LgTDM": {
+            "email": "Debbiejonestattoos@gmail.com",
+            "insta": "https://www.instagram.com/debbiejonestattoos/",
+            "loc": {
+                "lat": 51.6186698,
+                "lng": -3.9474663999999393
+            },
+            "name": "Debbie Jones",
+            "tags": [
+                "American traditional",
+                "bright color"
+            ]
+        },
+        "-LB6fOl_AGpTq_T0NhQI": {
+            "email": "bettyrosetattoos@gmail.com",
+            "insta": "https://www.instagram.com/bettyrosetattoos/",
+            "loc": {
+                "lat": 40.6781784,
+                "lng": -73.9441579
+            },
+            "name": "Betty Rose",
+            "tags": [
+                "neotraditional",
+                "female",
+                "non-male",
+                "cats",
+                "bright color",
+                "floral"
+            ]
+        },
+        "-LB6gSzu01tM3xjIPTIQ": {
+            "email": "mikedorseytattoo@gmail.com",
+            "insta": "https://www.instagram.com/mikedorseytattoo/",
+            "loc": {
+                "lat": 39.1031182,
+                "lng": -84.51201960000003
+            },
+            "name": "Mike Dorsey",
+            "tags": [
+                "Japanese traditional",
+                "hannya"
+            ]
         }
     }
 }
